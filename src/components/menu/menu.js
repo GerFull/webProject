@@ -12,15 +12,15 @@ export default function Menu() {
 
             <div className={style.menu__diffrences}>
                <div className={style.menu__diffrences_item}>
-                  <img src='/images/масло.png' />
+                  <img src='/images/rosemary.png' />
                   <p>НАТУРАЛЬНЫЕ МАСЛА</p>
                </div>
                <div className={style.menu__diffrences_item}>
-                  <img src='/images/ручная работа.png' />
+                  <img src='/images/hand-made.png' />
                   <p>РУЧНАЯ РАБОТА</p>
                </div>
                <div className={style.menu__diffrences_item}>
-                  <img src='/images/иконка купон.png' />
+                  <img src='/images/coupon.png' />
                   <p>КУПОН НА 1000 РУБ. КАЖДОМУ</p>
                </div>
             </div>
@@ -32,12 +32,20 @@ export default function Menu() {
             </div>
 
          </div>
+
          <div className={style.menu__buy}>
-               <img src='/images/free-icon-shopping-cart-694530.png'/>
-               <div>
-                  <p>Товаров:</p>
-                  <p>Сумма:</p>
+            <img src='/images/free-icon-shopping-cart-694530.png' />
+            <div>
+               <div className={style.menu__buy_item}>
+                  <div>Товаров:</div>
+                  <div>1шт</div>
                </div>
+
+               <div className={style.menu__buy_item}>
+                  <div>Сумма:</div>
+                  <div>5000 руб.</div>
+               </div>
+            </div>
          </div>
       </div>
    )
