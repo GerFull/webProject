@@ -1,6 +1,7 @@
 import { Routes, Route, Link } from "react-router-dom";
 import './App.css';
 import ExampleRef from "./pages/exampeRef";
+import ExampleContext from "./pages/exampleContext";
 import Home from "./pages/home";
 import Post from "./pages/post";
 
@@ -12,8 +13,9 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="posts" element={<Post/>} />
-        <Route path="dashboard" element={<Dashboard />} />
+
         <Route path='ref' element={<ExampleRef/>}/>
+        <Route path="context" element={<ExampleContext />} />
         <Route path="*" element={<NoMatch />} />
     
       </Routes>
@@ -21,23 +23,6 @@ export default function App() {
   );
 }
 
-
-function About() {
-  return (
-    <div>
-      <h2>About</h2>
-    </div>
-  );
-}
-
-
-function Dashboard() {
-  return (
-    <div>
-      <h2>Dashboard</h2>
-    </div>
-  );
-}
 
 function NoMatch() {
   return (

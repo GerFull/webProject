@@ -7,6 +7,7 @@ function Bestseller() {
 
          <Link to={'posts'}><p>Posts</p></Link>
          <Link to={'ref'}><p>Expample Ref</p></Link>
+         <Link to={'context'}><p>context</p></Link>
       </div>
    )
 }

@@ -1,5 +1,5 @@
 import style from '../pages/post.module.scss';
-import { useEffect, useState, useRef } from 'react'
+import { useState, useRef } from 'react'
 
 function ExampleRef() {
 
@@ -35,9 +35,11 @@ function ExampleRef() {
                 value={name}
                 onChange={(e)=>setName(e.target.value)}
                 onKeyUp={handlerClick1}
+                style={{color:'black'}}
             />
             <input
                 placeholder='Фамилия'
+                style={{color:'black'}}
                 ref={surNameRef}
                 value={surName}
                 type='text'
