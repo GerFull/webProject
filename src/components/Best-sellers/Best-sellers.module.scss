@@ -1,0 +1,133 @@
+.bestSellers {
+   padding: 180px 100px 150px 100px;
+
+   &__title {
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px;
+   }
+
+   &__container {
+      width: 100%;
+      margin-top: 100px;
+      display: flex;
+      justify-content: center;
+      gap: 200px;
+
+      @media (min-width: 0px) {
+         width: 100%;
+         margin-top: 100px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         gap: 200px;
+      }
+      @media (min-width: 768px) {
+         width: 100%;
+         margin-top: 100px;
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         gap: 200px;
+      }
+   }
+
+   &__item {
+      position: relative;
+      width: 280px;
+      &_name {
+         display: flex;
+         justify-content: center;
+         font-family: "Raleway";
+         font-style: normal;
+         font-weight: 400;
+         font-size: 20px;
+      }
+
+      &_buy {
+         width: 35px;
+         height: 35px;
+         position: absolute;
+         bottom: 0;
+         right: 0;
+      }
+   }
+
+   &__surprise {
+      width: 100%;
+      padding: 0 290px 60px 290px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 170px;
+      height: 430px;
+      background: linear-gradient(174.27deg, #fffeff 37.46%, #e1cfe3 95.44%);
+
+      &_title {
+         font-family: "Raleway";
+         font-style: normal;
+         font-weight: 400;
+         font-size: 45px;
+         line-height: 53px;
+      }
+      &_subtitle {
+         font-family: "Raleway";
+         font-style: normal;
+         font-weight: 400;
+         font-size: 50px;
+         line-height: 59px;
+         color: #6e4d8c;
+      }
+
+
+
+      @media (min-width: 0px) {
+         padding: 0 25px 40px 25px;
+         height: 290px;
+         margin-top: 0;
+         &_title {
+            font-size: 20px;
+            width: 140px;
+         }
+         &_subtitle {
+            font-size: 20px;
+         }
+         img{
+            width: 200px;
+            height: 175px;
+         }
+      }
+      @media (min-width: 768px) {
+         width: 100%;
+         padding: 0 290px 60px 290px;
+         display: flex;
+         justify-content: space-between;
+         margin-top: 170px;
+         height: 430px;
+         background: linear-gradient(174.27deg, #fffeff 37.46%, #e1cfe3 95.44%);
+
+         &_title {
+            font-family: "Raleway";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 45px;
+            line-height: 53px;
+         }
+         &_subtitle {
+            font-family: "Raleway";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 59px;
+            color: #6e4d8c;
+         }
+
+         img{
+            width: auto;
+            height: auto;
+         }
+      }
+   }
+}

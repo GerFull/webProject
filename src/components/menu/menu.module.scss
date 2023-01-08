@@ -1,17 +1,61 @@
-.menu {
-   width: 100%;
-   border: 1px solid black;
-   padding: 30px 100px;
-   box-sizing: border-box;
-   display: flex;
-   justify-content: space-between;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,200;1,300&family=Raleway:wght@400;500&display=swap");
 
-   &__logo {
-      width: 82px;
-      height: 82px;
+.menu {
+   @media (min-width: 0px) {
+      min-width: 100%;
+      padding: 30px 100px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   @media (min-width: 768px) {
+      max-width: 100%;
+      min-width: 100%;
+      padding: 30px 100px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
    }
 
-   &__center{
+
+
+   &__logoBox {
+      display: flex;
+      align-items: center;
+      p {
+         font-family: "Times New Roman";
+         font-style: normal;
+         font-weight: 400;
+         font-size: 32px;
+         line-height: 120%;
+      }
+      @media (min-width: 0px) {
+         img {
+            width: 25px;
+            height: 25px;
+         }
+         p {
+            font-size: 12px;
+         }
+      }
+      @media (min-width: 768px) {
+         p {
+            font-family: "Times New Roman";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 120%;
+         }
+         img{
+            width: 73px;
+            height: 67px;
+         }
+      }
+   }
+
+   &__center {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -19,12 +63,12 @@
 
    &__diffrences {
       display: flex;
-      gap:38px;
+      gap: 38px;
       margin-bottom: 10px;
 
       &_item {
          display: flex;
-         gap:5px;
+         gap: 5px;
          align-items: center;
 
          img {
@@ -34,29 +78,158 @@
       }
    }
 
-   &__search{
+   &__search {
+      position: relative;
 
-      input{
-         width: 427px;
+      img {
+         position: absolute;
+         top: -5px;
+         left: 20px;
       }
-
-      
+      input {
+         width: 320px;
+         border: none;
+         border-bottom: 1px solid black;
+         padding-bottom: 3px;
+         padding-left: 55px;
+      }
    }
 
-   &__buy{
-      width: 210px;
+   &__buy {
+      width: 250px;
       display: flex;
-      gap:10px;
+      align-items: center;
+      gap: 10px;
 
-      &_item{
+      &_item {
          width: 150px;
          display: flex;
          justify-content: space-between;
+      }
+      img {
+         width: 35px;
+         height: 35px;
+      }
+      @media (min-width: 0px) {
+         font-size: 10px;
+         width: auto;
+         img {
+            width: 21px;
+            height: 23px;
+         }
+      }
+      @media (min-width: 768px) {
+         width: 250px;
+         font-size: 15px;
+         display: flex;
+         align-items: center;
+         gap: 10px;
+   
+         &_item {
+            width: 150px;
+            display: flex;
+            justify-content: space-between;
+         }
+         img {
+            width: 35px;
+            height: 35px;
+         }
+      }
+   }
 
+   &__nav {
+      display: flex;
+      width: 100%;
+      background: #e4d5e7;
+      height: 28px;
+      justify-content: center;
+
+      div {
+         gap: 64px;
+         display: flex;
+         justify-content: space-around;
       }
-      img{
-         width: 50px;
-         height: 50px;
-      }
+   }
+
+   &__navItem {
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      text-decoration: none;
+      color: black;
+   }
+}
+
+.modal {
+   width: 600px;
+   padding: 120px 107px 30px 107px;
+
+   &__title {
+      display: flex;
+      justify-content: center;
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 35px;
+      line-height: 41px;
+      letter-spacing: 0.1em;
+      font-variant: small-caps;
+      text-transform: uppercase;
+      margin-bottom: 66px;
+   }
+
+   &__inputBox {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 60px;
+   }
+
+   &__input {
+      border: none;
+      border-bottom: 1px solid black;
+      padding-bottom: 3px;
+      padding-left: 5px;
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 29px;
+   }
+
+   &__input:focus {
+      outline: none;
+   }
+
+   &__btn {
+      background: linear-gradient(0deg, rgba(234, 130, 255, 0.71), rgba(234, 130, 255, 0.71));
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.65);
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 40px;
+      width: 189px;
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 29px;
+      letter-spacing: 0.1em;
+      text-transform: capitalize;
+      color: #000000;
+      margin: 0 auto;
+   }
+
+   &__text {
+      margin-top: 165px;
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px;
+      text-align: center;
    }
 }

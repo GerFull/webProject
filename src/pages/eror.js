@@ -3,7 +3,7 @@ import React from 'react'
 function Eror() {
    return (
       <div>
-         EROREROREROREROREROREROREROREROREROREROREROREROREROREROREROREROR
+         EROR
       </div>
    )
 }

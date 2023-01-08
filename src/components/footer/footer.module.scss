@@ -1,0 +1,203 @@
+.footer {
+   width: 100%;
+   background: #e4d5e7;
+   padding-top: 15px;
+
+   &__socialContainer {
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 60px;
+   }
+
+   &__social {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      p {
+         font-family: "Raleway";
+         font-style: normal;
+         font-weight: 400;
+         font-size: 20px;
+         line-height: 23px;
+      }
+   }
+
+   &__contactBox {
+      display: flex;
+      gap: 400px;
+      padding: 15px 60px;
+
+      &__title {
+         font-family: "Raleway";
+         font-style: normal;
+         font-weight: 500;
+         font-size: 20px;
+         line-height: 24px;
+         margin-bottom: 50px;
+         @media (min-width: 0px) {
+            font-size: 13px;
+         }
+         @media (min-width: 768px) {
+            font-size: 20px;
+         }
+      }
+
+      &__text {
+         font-family: "Raleway";
+         font-style: normal;
+         font-weight: 500;
+         font-size: 20px;
+         line-height: 24px;
+         margin-bottom: 10px;
+         @media (min-width: 0px) {
+            font-size: 10px;
+         }
+         @media (min-width: 768px) {
+            font-size: 20px;
+         }
+      }
+
+      @media (min-width: 0px) {
+         display: flex;
+         gap: 150px;
+         padding: 20px 5px;
+
+         &__title {
+            font-family: "Raleway";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 50px;
+            @media (min-width: 0px) {
+               font-size: 13px;
+            }
+            @media (min-width: 768px) {
+               font-size: 20px;
+            }
+         }
+
+         &__text {
+            font-family: "Raleway";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 10px;
+            @media (min-width: 0px) {
+               font-size: 10px;
+            }
+            @media (min-width: 768px) {
+               font-size: 20px;
+            }
+         }
+      }
+      @media (min-width: 768px) {
+         display: flex;
+         gap: 400px;
+         padding: 15px 60px;
+
+         &__title {
+            font-family: "Raleway";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 50px;
+            @media (min-width: 0px) {
+               font-size: 13px;
+            }
+            @media (min-width: 768px) {
+               font-size: 20px;
+            }
+         }
+
+         &__text {
+            font-family: "Raleway";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 10px;
+            @media (min-width: 0px) {
+               font-size: 10px;
+            }
+            @media (min-width: 768px) {
+               font-size: 20px;
+            }
+         }
+      }
+   }
+
+   &__company {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      @media (min-width: 0px) {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+      @media (min-width: 768px) {
+         display: flex;
+         flex-direction: column;
+         align-items: flex-end;
+      }
+   }
+
+   &__text {
+      display: flex;
+      gap: 50px;
+      position: relative;
+      div {
+         position: absolute;
+         right: -240px;
+      }
+      &_adress {
+         top: 15px;
+      }
+
+      @media (min-width: 0px) {
+         display: flex;
+         gap: 50px;
+         position: relative;
+         div {
+            position: absolute;
+            right: -100px;
+         }
+         &_adress {
+            top: 15px;
+         }
+      }
+      @media (min-width: 768px) {
+         display: flex;
+         gap: 50px;
+         position: relative;
+         div {
+            position: absolute;
+            right: -240px;
+         }
+         &_adress {
+            top: 15px;
+         }
+      }
+   }
+
+   &__buyers {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+   }
+
+   @media (min-width: 0px) {
+      width: 100%;
+      background: white;
+      padding-top: 15px;
+   }
+   @media (min-width: 768px) {
+      width: 100%;
+      background: #e4d5e7;
+      padding-top: 15px;
+   }
+}
